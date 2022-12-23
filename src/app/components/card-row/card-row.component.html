@@ -1,1 +1,22 @@
-<p>card-row works!</p>
+<section class="relative container mx-auto mt-12 px-[12px]">
+  <div class="flex overflow-x-scroll hide-scroll-bar pb-8">
+    <div class="flex flex-nowrap">
+      <div *ngFor="let card of cardContents()" class="inline-block px-3">
+        <div class="w-36 h-[90px] max-w-xs overflow-hidden rounded-2xl shadow-md bg-white transition-shadow duration-300 ease-in-out">
+          <div class="flex relative items-center p-2">
+            <div class="flex flex-col w-1/3 items-center mx-1">
+              <img [src]="card.svg" class="w-7 h-7" alt="">
+            </div>
+            <div class="flex flex-col w-2/3 items-start">
+              <h1 class="text-lg text-[#363438] font-bold">{{ card.val }}</h1>
+              <p class="text-xs dark:text-gray-500 mb-2">{{ card.text }}</p>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-[#C6FD51] h-2 rounded-full" [ngStyle]="{ 'width': card.percentage }"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
