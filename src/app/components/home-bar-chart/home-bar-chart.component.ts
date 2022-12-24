@@ -29,6 +29,9 @@ export class HomeBarChartComponent implements OnInit {
       legend: {
         display: false,
       },
+      tooltip: {
+        enabled: false
+      }
     },
     animation: {
       onComplete: () => { this.delayed = true; },
@@ -39,7 +42,7 @@ export class HomeBarChartComponent implements OnInit {
         }
         return delay;
       },
-    }
+    },
   };
   public barChartData: ChartData<'bar'> = {
     labels: ['t', 'w', 't', 'f', 's', 's', 'm'],

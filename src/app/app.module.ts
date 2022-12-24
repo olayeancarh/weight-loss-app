@@ -11,6 +11,7 @@ import { GoalComponent } from './components/goal/goal.component';
 import { HomeBarChartComponent } from './components/home-bar-chart/home-bar-chart.component';
 import { NgChartsModule } from 'ng2-charts';
 import { TrendingComponent } from './components/trending/trending.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TrendingComponent } from './components/trending/trending.component';
     CardRowComponent,
     GoalComponent,
     HomeBarChartComponent,
-    TrendingComponent
+    TrendingComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
