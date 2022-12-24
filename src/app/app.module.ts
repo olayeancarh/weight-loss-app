@@ -10,6 +10,7 @@ import { CardRowComponent } from './components/card-row/card-row.component';
 import { GoalComponent } from './components/goal/goal.component';
 import { HomeBarChartComponent } from './components/home-bar-chart/home-bar-chart.component';
 import { NgChartsModule } from 'ng2-charts';
+import { TrendingComponent } from './components/trending/trending.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgChartsModule } from 'ng2-charts';
     CardComponent,
     CardRowComponent,
     GoalComponent,
-    HomeBarChartComponent
+    HomeBarChartComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule,
