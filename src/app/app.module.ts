@@ -13,6 +13,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { TrendingComponent } from './components/trending/trending.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HomeButtonComponent } from './components/home-button/home-button.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeButtonComponent } from './components/home-button/home-button.compon
     HomeBarChartComponent,
     TrendingComponent,
     NavigationComponent,
-    HomeButtonComponent
+    HomeButtonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
