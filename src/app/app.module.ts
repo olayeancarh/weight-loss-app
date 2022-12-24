@@ -9,6 +9,7 @@ import { CardComponent } from './components/card/card.component';
 import { CardRowComponent } from './components/card-row/card-row.component';
 import { GoalComponent } from './components/goal/goal.component';
 import { HomeBarChartComponent } from './components/home-bar-chart/home-bar-chart.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeBarChartComponent } from './components/home-bar-chart/home-bar-char
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
