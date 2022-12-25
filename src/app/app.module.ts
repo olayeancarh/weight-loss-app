@@ -12,7 +12,6 @@ import { HomeBarChartComponent } from './components/home-bar-chart/home-bar-char
 import { NgChartsModule } from 'ng2-charts';
 import { TrendingComponent } from './components/trending/trending.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { HomeButtonComponent } from './components/home-button/home-button.component';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
@@ -25,8 +24,7 @@ import { HomeComponent } from './components/home/home.component';
     HomeBarChartComponent,
     TrendingComponent,
     NavigationComponent,
-    HomeButtonComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

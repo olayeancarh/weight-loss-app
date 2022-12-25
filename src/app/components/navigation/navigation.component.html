@@ -1,4 +1,12 @@
-<app-home-button></app-home-button>
+<section class="relative container mx-auto px-[24px] -mt-7 z-50">
+  <div class="justify-center relative flex">
+    <div class="flex items-center">
+      <button (click)="openMenu()" type="button" class="bg-[#7D66FF] flex rounded-full items-center p-5">
+        <img src="assets/images/fplus.svg" class="w-6 h-6 opacity-85" alt="">
+      </button>
+    </div>
+  </div>
+</section>
 <div class="absolute inset-x-0 bottom-0 bg-white h-20 w-full mx-auto p-[24px] rounded-b-[49px] rounded-t-3xl z-40">
   <div class="relative container mx-auto px-2">
     <div class="flex justify-between items-center">
@@ -11,5 +19,23 @@
         <img src="assets/images/fuser.svg" class="w-6 h-6 opacity-85 ml-3" alt="">
       </div>
     </div>
+  </div>
+</div>
+<div *ngIf="showNav" (click)="showNav = false">
+  <div class="opacity-20 absolute inset-0 z-40 bg-black"></div>
+  <div class="overflow-x-hidden overflow-y-auto absolute inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+    <section class="relative container mx-auto px-[24px] mt-36">
+      <div class="bg-white p-3 rounded-2xl my-4 w-full relative flex items-center overflow-hidden">
+        <ul class="my-4 space-y-3 w-full">
+          <li *ngFor="let item of navContents()">
+              <a href="#" class="flex items-center p-3 text-md font-normal rounded-lg bg-white shadow-xl group mx-2">
+                <img [src]='item.svg' class="w-6 h-6" alt="">
+                <span class="flex-1 ml-3 whitespace-nowrap">{{ item.text }}</span>
+              </a>
+          </li>
+
+      </ul>
+      </div>
+    </section>
   </div>
 </div>
