@@ -13,6 +13,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { TrendingComponent } from './components/trending/trending.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HomeComponent } from './components/home/home.component';
+import { MeasurementComponent } from './components/measurement/measurement.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HomeComponent } from './components/home/home.component';
     TrendingComponent,
     NavigationComponent,
     HomeComponent,
+    MeasurementComponent
   ],
   imports: [
     BrowserModule,

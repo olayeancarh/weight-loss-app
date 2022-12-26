@@ -16,6 +16,11 @@ export class NavigationComponent implements OnInit {
 
   openMenu(): void {
     this.showNav = true;
+    document.getElementById('navcontainer')?.classList.toggle('invisible');
+    document.getElementById('bgModal')?.classList.toggle('opacity-0');
+    document.getElementById('bgModal')?.classList.toggle('opacity-20');
+    document.getElementById('navItems')?.classList.toggle('translate-y-full');
+    document.getElementById('navList')?.classList.toggle('nav-items-animation');
   }
 
   navContents(): any {

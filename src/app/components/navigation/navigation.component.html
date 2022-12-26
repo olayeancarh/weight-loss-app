@@ -21,19 +21,18 @@
     </div>
   </div>
 </div>
-<div *ngIf="showNav" (click)="showNav = false">
-  <div class="opacity-20 absolute inset-0 z-40 bg-black"></div>
-  <div class="overflow-x-hidden overflow-y-auto absolute inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+<div id="navcontainer" class="invisible" (click)="openMenu()">
+  <div id="bgModal" class="opacity-0 absolute inset-0 z-40 bg-black duration-500 ease-in-out transition-all"></div>
+  <div id="navItems" class="translate-y-full duration-1000 delay-75 ease-in-out transition-all overflow-x-hidden overflow-y-auto absolute inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
     <section class="relative container mx-auto px-[24px] mt-36">
-      <div class="bg-white p-3 rounded-2xl my-4 w-full relative flex items-center overflow-hidden">
-        <ul class="my-4 space-y-3 w-full">
+      <div id="navList" class="bg-white p-3 rounded-2xl my-4 w-full relative flex items-center overflow-hidden nav-items">
+        <ul class="my-4 space-y-3">
           <li *ngFor="let item of navContents()">
-              <a href="#" class="flex items-center p-3 text-md font-normal rounded-lg bg-white shadow-xl group mx-2">
+              <a routerLink="/measurement" class="flex items-center p-3 text-md font-normal rounded-lg bg-white shadow-xl group mx-2">
                 <img [src]='item.svg' class="w-6 h-6" alt="">
                 <span class="flex-1 ml-3 whitespace-nowrap">{{ item.text }}</span>
               </a>
           </li>
-
       </ul>
       </div>
     </section>

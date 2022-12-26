@@ -1,0 +1,15 @@
+.nav-items {
+  width: 0%;
+  overflow: hidden;
+  opacity: 0;
+  /* position: absolute; */
+  transition: all 1s ease;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nav-items-animation {
+  width: 100%;
+  opacity: 1;
+  transition: all 0.7s ease 0.1s
+}
