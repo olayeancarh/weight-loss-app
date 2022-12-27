@@ -10,6 +10,7 @@ export class CardRowComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById('scrollEvent')?.addEventListener('scroll', (e) => this.cardsScroll(e), true);
   }
 
   cardContents(): any {
@@ -18,6 +19,11 @@ export class CardRowComponent implements OnInit {
       {val: 7996, text: 'Steps', svg: 'assets/images/feet.svg', percentage: '45%'},
       {val: 21, text: 'Weight loss', svg: 'assets/images/fmeter.svg', percentage: '80%'},
     ]
+  }
+
+  cardsScroll(event: any): void {
+    console.log(event);
+    document.getElementById('ringBall2')?.classList.toggle('ball');
   }
 
 }

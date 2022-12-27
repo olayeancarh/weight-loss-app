@@ -11,5 +11,21 @@
 .nav-items-animation {
   width: 100%;
   opacity: 1;
-  transition: all 0.7s ease 0.1s
+  transition: all 0.7s ease 0.4s
+}
+
+.ball {
+  animation: ball 0.5s ease;
+}
+
+@keyframes ball {
+  0% {
+    opacity: 0.1;
+    transform: scale(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(100%);
+  }
 }

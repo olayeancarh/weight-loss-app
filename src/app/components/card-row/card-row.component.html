@@ -1,5 +1,5 @@
 <section class="relative container mx-auto mt-9 px-[12px]">
-  <div class="flex overflow-x-scroll hide-scroll-bar pb-8">
+  <div class="flex overflow-x-scroll hide-scroll-bar pb-8 scroll-smooth hover:scroll-auto" id="scrollEvent">
     <div class="flex flex-nowrap">
       <div *ngFor="let card of cardContents()" class="inline-block px-3">
         <div class="w-36 h-[90px] max-w-xs overflow-hidden rounded-2xl shadow-xl bg-white transition-shadow duration-300 ease-in-out">
@@ -17,6 +17,7 @@
           </div>
         </div>
       </div>
+      <div id="ringBall2" class="absolute flex rounded-full items-center p-10 border-[6px] border-[#C6FD51] opacity-0"></div>
     </div>
   </div>
 </section>

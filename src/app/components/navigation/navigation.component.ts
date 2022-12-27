@@ -21,6 +21,7 @@ export class NavigationComponent implements OnInit {
     document.getElementById('bgModal')?.classList.toggle('opacity-20');
     document.getElementById('navItems')?.classList.toggle('translate-y-full');
     document.getElementById('navList')?.classList.toggle('nav-items-animation');
+    document.getElementById('ringBall')?.classList.toggle('ball');
   }
 
   navContents(): any {
