@@ -14,6 +14,7 @@ import { TrendingComponent } from './components/trending/trending.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HomeComponent } from './components/home/home.component';
 import { MeasurementComponent } from './components/measurement/measurement.component';
+import { HistoryComponent } from './components/history/history.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MeasurementComponent } from './components/measurement/measurement.compo
     TrendingComponent,
     NavigationComponent,
     HomeComponent,
-    MeasurementComponent
+    MeasurementComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
