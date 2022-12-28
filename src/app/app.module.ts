@@ -14,6 +14,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { HomeComponent } from './components/home/home.component';
 import { MeasurementComponent } from './components/measurement/measurement.component';
 import { HistoryComponent } from './components/history/history.component';
+import { HistoryBarChartComponent } from './components/history-bar-chart/history-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HistoryComponent } from './components/history/history.component';
     NavigationComponent,
     HomeComponent,
     MeasurementComponent,
-    HistoryComponent
+    HistoryComponent,
+    HistoryBarChartComponent
   ],
   imports: [
     BrowserModule,
