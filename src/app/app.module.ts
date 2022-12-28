@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivityComponent } from './components/activity/activity.component';
-import { CardComponent } from './components/card/card.component';
 import { CardRowComponent } from './components/card-row/card-row.component';
 import { GoalComponent } from './components/goal/goal.component';
 import { HomeBarChartComponent } from './components/home-bar-chart/home-bar-chart.component';
@@ -20,7 +19,6 @@ import { HistoryComponent } from './components/history/history.component';
   declarations: [
     AppComponent,
     ActivityComponent,
-    CardComponent,
     CardRowComponent,
     GoalComponent,
     HomeBarChartComponent,
