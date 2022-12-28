@@ -11,7 +11,7 @@
 .nav-items-animation {
   width: 100%;
   opacity: 1;
-  transition: all 0.7s ease 0.4s
+  transition: all 0.7s ease 0.1s
 }
 
 .ball {
