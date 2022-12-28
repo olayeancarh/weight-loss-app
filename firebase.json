@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "weight-loss-app",
+    "public": "dist/weight-loss-app",
     "ignore": [
       "firebase.json",
       "**/.*",
